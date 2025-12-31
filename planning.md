@@ -2,6 +2,12 @@
 personal portfolio
 
 
+moodboard:
+
+https://www.figma.com/design/DEQ4skM9rexNemt34yWqaF/Moonveil?node-id=0-1&t=TDh9ZTafDUXXyUcC-1
+
+
+
 ### 1. Main Landing (index.html)
 The main entry point of the website serves as both a professional resume and an immersive introduction to the brand. Upon loading, the site triggers a custom initialization animation before revealing a scrollable layout that transitions from a resume section to a blog feed located below
 
