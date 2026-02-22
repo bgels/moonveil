@@ -1,0 +1,96 @@
+# Operating System Junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Zone.Identifier
+# Note: DS_Store without the dot covers some variants
+DS_Store
+
+# Visual Studio Code Settings
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# ignore all files starting with . or ~
+# (Overrides for specific allowed dotfiles are at the bottom)
+.*
+~*
+
+# dependencies & package managers
+node_modules/
+/node_modules
+/vendor
+/bower_components
+/.pnp
+pnp.js
+
+# testing
+/coverage
+
+# Next.js & Build outputs
+/.next/
+/out/
+/build
+/dist
+/_site
+/vercel
+*.tsbuildinfo
+next-env.d.ts
+
+# Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+# log files and databases
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.sql
+*.sqlite
+
+# local env files
+.env
+env
+env*.local
+
+# compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# private/secret files
+*.der
+*.key
+*.pem
+
+# --------------------------------------------------------
+# BEGIN Explicitly Allowed Files (i.e. do NOT ignore these)
+# --------------------------------------------------------
+
+# Track these even if they start with a dot
+!.dockerignore
+!.editorconfig
+!.env.example
+!.git-blame-ignore-revs
+!.gitignore
+!.nvmrc
+!.phpcs.xml.dist
