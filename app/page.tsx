@@ -33,7 +33,7 @@ export default function Home() {
         />
 
         <section className={`flex flex-col items-start gap-4 ${darkMode ? "text-blue-200" : "text-black"}`}>
-          <p className="text-2xl text-nowrap font-handjet">Yu Lu, Stuy 26'</p>
+          <p className="text-2xl text-nowrap font-handjet">Yu Lu @ Stuy 26'</p>
           <hr className="w-full border-t"></hr>
 
           <div className="flex flex-row items-center justify-items-center gap-4">
@@ -47,6 +47,7 @@ export default function Home() {
               <PiSteamLogoFill className={`w-s-smallButton h-s-smallButton hover:scale-105`} />
             </a>
           </div>
+          <p className="text-sm font-handjet">Better website coming soon ;-;</p>
         </section>
       </div>
       
