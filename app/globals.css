@@ -1,23 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #041642;
+  --foreground: #002063;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-gloaming: #2d343e;
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --spacing-f-button: clamp(3rem, 15vw, 6rem);
-  --color-gloaming: #2d343e;
+  --font-tegaki: var(--font-tegaki);
+  --font-handjet: var(--font-handjet-local);
+
+  --spacing-s-button: clamp(3rem, 16vw, 5rem); 
+  --spacing-s-smallButton: clamp(1.25rem, 3vw, 2rem);
+  --text-s-title: clamp(4rem, 20vw, 8rem);
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #041642;
+    --foreground: #002063;
   }
 }
 
