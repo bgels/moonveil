@@ -1,5 +1,5 @@
 import { TbEggCrackedFilled } from "react-icons/tb";
-import "./globals.css";
+import "./globals.css"
 import localFont from "next/font/local"
 
 const fontTegaki = localFont({
