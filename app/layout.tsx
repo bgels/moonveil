@@ -2,7 +2,6 @@ import { TbEggCrackedFilled } from "react-icons/tb";
 import "./globals.css"
 import localFont from "next/font/local"
 import PreloadScreen from "./preloadScreen";
-import { Analytics } from "@vercel/analytics/next";
 
 const fontTegaki = localFont({
   src:"./fonts/tegaki.woff2",
@@ -23,7 +22,6 @@ export default function RootLayout({
       <body>
         <PreloadScreen />
         {children}
-        <Analytics />
       </body>
     </html>
   );

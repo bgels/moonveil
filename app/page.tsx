@@ -11,13 +11,13 @@ export default function Home() {
     <main className={`relative h-screen w-full ${darkMode ? "bg-gray-900" : "bg-blue-300"}`}>
       
       {/* Background Layer */}
-      <div className="absolute opacity-10 inset-0 z-0 pointer-events-none">
+      <div className="absolute inset-0 opacity-70 z-0 pointer-events-none">
         <Image 
-          src="/homepage/bg.png" 
+          src="/homepage/bg2.png" 
           fill
           alt="Background Image"
           className="object-cover"
-          style={{ filter: "grayscale(100%) blur(7px) drop-shadow(8px 8px 10px lightblue)" }}
+          style={{ filter: "blur(0px) drop-shadow(8px 8px 10px lightblue)" }}
           draggable="false"
           priority 
         />
