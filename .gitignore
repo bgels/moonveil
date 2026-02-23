@@ -1,3 +1,6 @@
+/public/temp
+
+
 # Operating System Junk
 .DS_Store
 Thumbs.db
@@ -81,6 +84,7 @@ env*.local
 *.der
 *.key
 *.pem
+
 
 # --------------------------------------------------------
 # BEGIN Explicitly Allowed Files (i.e. do NOT ignore these)
