@@ -33,7 +33,7 @@ export default function Home() {
         />
 
         <section className={`flex flex-col items-start gap-4 ${darkMode ? "text-blue-200" : "text-black"}`}>
-          <p className="text-2xl text-nowrap font-handjet">Yu Lu @ Stuy 26'</p>
+          <p className="text-2xl text-nowrap font-tegaki">Yu Lu @ Stuy 26'</p>
           <hr className="w-full border-t"></hr>
 
           <div className="flex flex-row items-center justify-items-center gap-4">
