@@ -17,7 +17,7 @@ export default function Home() {
           fill
           alt="Background Image"
           className="object-cover"
-          style={{ filter: "blur(6px) drop-shadow(8px 8px 10px lightblue)" }}
+          style={{ filter: "blur(8px) drop-shadow(8px 8px 10px lightblue)" }}
           draggable="false"
           priority 
         />
@@ -34,8 +34,14 @@ export default function Home() {
 
         <section className={`flex flex-col items-start gap-4 ${darkMode ? "text-blue-200" : "text-black"}`}>
           <p className="text-2xl text-nowrap font-tegaki">Yu Lu @ Stuy 26'</p>
-          <hr className="w-full border-t"></hr>
+          <div className={`text-2xl flex flex-col font-tegaki`}>
+            <a className="font-handjet" href="/resume">Resume</a>
+            <a className="font-handjet" href="/projects">Projects</a>
+            <a className="font-handjet" href="/extras">Guitar Tabs / Downloads</a>
+            <a className="font-handjet" href="/about">About Me</a>
+          </div>
 
+          <hr className="w-full border-t"></hr>
           <div className="flex flex-row items-center justify-items-center gap-4">
             <a href="https://github.com/bgels" target="_blank" rel="noopener noreferrer">
               <PiGithubLogoFill className={`w-s-smallButton h-s-smallButton hover:scale-105`}/>
