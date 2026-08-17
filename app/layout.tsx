@@ -4,11 +4,11 @@ import localFont from "next/font/local"
 import PreloadScreen from "./preloadScreen";
 
 const fontTegaki = localFont({
-  src:"./fonts/tegaki.woff2",
+  src:"./assets/fonts/tegaki.woff2",
   variable: "--font-tegaki"
 });
 const fontHandjet = localFont({
-  src:"./fonts/handjet.woff2",
+  src:"./assets/fonts/handjet.woff2",
   variable: "--font-handjet-local"
 })
 

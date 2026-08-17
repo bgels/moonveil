@@ -1,7 +1,6 @@
 'use client'
 import { useEffect, useState } from "react"
 import { useUserPreferences } from "./store";
-// PreloadScreen component to show a loading screen on first visit
 export default function PreloadScreen() {
     const [isLoading, setIsLoading] = useState(false);
     const darkMode = useUserPreferences(state =>state.darkMode);

@@ -9,12 +9,23 @@ html, body{
 :root {
   --background: #041642;
   --foreground: #002063;
+  --wg-1: #BDC8DF;
+  --wg-2: #5A6F8F;
+  --wg-3: #2A3EB1;
+  --wg-4: #17233D;
+  --wg-5: #0E1424;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-gloaming: #2d343e;
+
+  --color-wg-1: var(--wg-1);
+  --color-wg-2: var(--wg-2);
+  --color-wg-3: var(--wg-3);
+  --color-wg-4: var(--wg-4);
+  --color-wg-5: var(--wg-5);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
