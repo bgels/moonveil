@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from "react"
-import { useUserPreferences } from "./store";
+import { useUserPreferences } from "../../store";
 export default function PreloadScreen() {
     const [isLoading, setIsLoading] = useState(false);
     const darkMode = useUserPreferences(state =>state.darkMode);
@@ -24,8 +24,8 @@ export default function PreloadScreen() {
     if (!isLoading) return null;
 
     return(
-    <main className={`relative h-screen w-full ${darkMode ? "bg-gray-900" : "bg-blue-300"}`}>
-        <p className={`flex items-center justify-center h-full font-tegaki ${darkMode ? "text-blue-200" : "text-black"}`}>loading assets... 😭</p>
+    <main className={`fixed inset-0 z-50 flex items-center justify-center ${darkMode ? "bg-gray-900" : "bg-blue-300"}`}>
+        <p className={`font-tegaki`}>loading assets... 😭</p>
     </main>
     )
 }

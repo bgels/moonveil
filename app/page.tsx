@@ -54,7 +54,7 @@ function Menu() {
       <motion.div
         key={link.href}
         variants={itemVariant}
-        className="relative flex items-center group gap-1 cursor-pointer"
+        className="relative flex items-center group gap-1"
         onMouseEnter={() => setHoveredIndex(index)}
         whileHover={{translateX:2}}
       >
@@ -107,6 +107,7 @@ export default function Home() {
 
       {/* Content Layer */}
       <div className={`relative z-10 flex flex-row items-center justify-center h-full gap-8 ${theme.textPrimary}`}>
+        
         <p className={'[writing-mode:vertical-rl] select-none font-tegaki text-s-title tracking-tighter text-nowrap -mr-9 -ml-9'}>卢于</p>
 
         <PiMoonStarsFill 
@@ -117,28 +118,24 @@ export default function Home() {
         <section className={`flex flex-col items-start gap-4 ${theme.textPrimary}`}>
 
           <p className="text-2xl text-nowrap font-tegaki">Yu Lu @ CMU 30'</p>
-
           <Menu />
-
           <motion.hr className="w-full border-t"></motion.hr>
-
           <motion.div   
             variants={listVariant}
             initial="hidden"
             animate="visible"
             className="flex flex-row items-center justify-items-center gap-4">
-          <motion.a variants={itemVariant} href="https://github.com/bgels" target="_blank" rel="noopener noreferrer">
-            <PiGithubLogoFill className={`w-s-smallButton h-s-smallButton`}/>
-          </motion.a>
-          <motion.a variants={itemVariant} href="https://www.instagram.com/luyucool/" target="_blank" rel="noopener noreferrer">
-            <PiInstagramLogoFill className={`w-s-smallButton h-s-smallButton`}/>
-          </motion.a>
-          <motion.a variants={itemVariant} href="https://steamcommunity.com/id/crusty_pizza/" target="_blank" rel="noopener noreferrer">
-            <PiSteamLogoFill className={`w-s-smallButton h-s-smallButton`} />
-          </motion.a>
-
+            <motion.a variants={itemVariant} href="https://github.com/bgels" target="_blank" rel="noopener noreferrer">
+              <PiGithubLogoFill className={`w-s-smallButton h-s-smallButton`}/>
+            </motion.a>
+            <motion.a variants={itemVariant} href="https://www.instagram.com/luyucool/" target="_blank" rel="noopener noreferrer">
+              <PiInstagramLogoFill className={`w-s-smallButton h-s-smallButton`}/>
+            </motion.a>
+            <motion.a variants={itemVariant} href="https://steamcommunity.com/id/crusty_pizza/" target="_blank" rel="noopener noreferrer">
+              <PiSteamLogoFill className={`w-s-smallButton h-s-smallButton`} />
+            </motion.a>
           </motion.div>
-          {/* <p className="text-sm font-handjet">Better website coming soon ;-;</p> */}
+
         </section>
       </div>
       

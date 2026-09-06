@@ -1,7 +1,5 @@
-import { TbEggCrackedFilled } from "react-icons/tb";
 import "./globals.css"
 import localFont from "next/font/local"
-import PreloadScreen from "./preloadScreen";
 
 const fontTegaki = localFont({
   src:"./assets/fonts/tegaki.woff2",
@@ -20,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fontTegaki.variable} ${fontHandjet.variable}`}>
       <body>
-        <PreloadScreen />
         {children}
       </body>
     </html>
